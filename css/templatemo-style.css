@@ -144,11 +144,10 @@ a:hover {
   text-align: center;
 }
 
-.row{
+.pp{
   width:300px;
   height:300px;
-  background-size:cover;
-  background-position:center;
+  object-fit:cover;
   border-radius:50%;
 }
 
