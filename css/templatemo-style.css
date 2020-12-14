@@ -145,7 +145,7 @@ a:hover {
 }
 
 .pp {
-  align-content: middle;
+  margin: auto;
   width: 50%;
   height: 60%
 }
