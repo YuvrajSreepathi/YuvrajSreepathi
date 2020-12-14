@@ -151,17 +151,52 @@ https://templatemo.com/tm-530-mini-profile
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <form
-              action="index.html"
-              method="POST"
-              id="tmContactForm"
-              class="tm-bg-white-transparent"
-            >
-              
-            </form>
+            <div class="tm-bg-white-transparent">
+              <a href="https://www.facebook.com/yuvraj.sreepathi.9" class="fa fa-facebook" target="_blank"></a>
+              <a href="https://twitter.com/yuvraj19_" class="fa fa-twitter" target="_blank"></a>
+              <a href="mailto:ys3mnq@virginia.edu" class="fa fa-google" target="_blank"></a>
+              <a href="https://www.linkedin.com/in/yuvraj-sreepathi/" class="fa fa-linkedin" target="_blank"></a>
+            </div>
           </div>
         </div>
       <!-- container -->
     </div>
+    </div>
+    <!-- section -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+      function detectMsBrowser() {
+        using_ms_browser =
+          navigator.appName == "Microsoft Internet Explorer" ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Edge") > -1) ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Trident") > -1);
+
+        if (using_ms_browser == true) {
+          alert(
+            "Please use Chrome or Firefox for the best browsing experience!"
+          );
+        }
+      }
+      function setBrandMarginTop() {
+        var bottomContainerHeight = $(".tm-welcome-container").height();
+
+        $(".tm-brand-container-outer").css({
+          "margin-top": -bottomContainerHeight + "px"
+        });
+      }
+
+      $(function() {
+        setBrandMarginTop();
+        detectMsBrowser();
+
+        // Handle window resize event
+        $(window).resize(function() {
+          setBrandMarginTop();
+        });
+      });
+    </script>
   </body>
 </html>
